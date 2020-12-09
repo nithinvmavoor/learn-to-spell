@@ -5,9 +5,9 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register(r'animals', views.AnimalsViewSet)
-router.register(r'colours', views.ColoursViewSet)
-router.register(r'fruits', views.FruitsViewSet)
+router.register(r'api/animals', views.AnimalsViewSet)
+router.register(r'api/colours', views.ColoursViewSet)
+router.register(r'api/fruits', views.FruitsViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
